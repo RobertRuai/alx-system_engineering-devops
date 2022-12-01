@@ -1,5 +1,5 @@
 This repository contains all shell-basics project tasks
-
+0-current_working_directory
 
 Where am I? : A script that prints the absolute path of the current working directory.
 
