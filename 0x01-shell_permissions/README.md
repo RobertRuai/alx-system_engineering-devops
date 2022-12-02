@@ -39,53 +39,5 @@ this folder contains all alx shell permissions project tasks
 [John Doe](https://github.com/RobertRuai/alx-system_engineering-devops/blob/master/0x01-shell_permissions/9-John_Doe)  : A script that sets the mode of the file hello; where owner has all the permissions set, group owner has execute permissions set and others have only write and read permissions set.
 
 
+[Execute](https://github.com/RobertRuai/alx-system_engineering-devops/blob/master/0x01-shell_permissions/5-execute) : A script that adds execute permission to the owner of the file hello.
 
- 
-
-
- 
-
-
-
-
-
-
-
-
-
-Execute : A script that adds execute permission to the owner of the file hello.
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
- 
-
-
- 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
