@@ -4,17 +4,15 @@ f="school"
 if [ -e "$f" ]
 then
 	echo "school file exists"
-	if [ ! -s "$f" ]
+	if [ -s "$f" ]
 	then
-		echo "school file is empty"
-	else
 		echo "school file is not empty"
+	else
+		echo "school file is empty"
 	fi
 	if [ -f "$f" ]
 	then
 		echo "school file is a reglar file"
-	else
-		echo -n
 	fi
 else
 	echo "school file does not exist"
