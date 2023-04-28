@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that displays to infinity and beyond indefinateley
+
+ pkill -f ./7-highlander
