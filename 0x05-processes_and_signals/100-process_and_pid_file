@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#script that displays to infinity and beyond indefinateley
+
+trap "echo I hate the kill command" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+echo $$ >> /var/run/myscript.pid
+function rem() {
+	rm /var/run/myscript.pid
+	exit
+}
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+trap rem INT SIGTERM exit
+done
