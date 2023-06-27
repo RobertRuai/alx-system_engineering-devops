@@ -1,3 +1,4 @@
-##!/usr/bin/env bash
+#!/usr/bin/env bash
+#restarts apache server
 
-service apache2 start
+sudo service apache2 start
