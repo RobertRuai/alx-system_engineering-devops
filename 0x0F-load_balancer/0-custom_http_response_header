@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Configure Nginx server with a custom header
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo service nginx start
+
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
+sudo sh -c 'printf %s "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    add_header X-Served-By $HOSTNAME;
+    }
+}" > /etc/nginx/sites-available/default'
+
+sudo service nginx restart
