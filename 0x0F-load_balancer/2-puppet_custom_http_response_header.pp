@@ -20,5 +20,5 @@ exec {'install_Nginx':
 
 exec {'update':
   provider => shell,
-  command => 'sudo apt-get -y update',
+  command  => 'sudo apt-get -y update',
 }
