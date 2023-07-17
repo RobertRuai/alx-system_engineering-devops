@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+if [[ "$(whoami)" -eq "$(USER)" ]]; then
+    echo $USER
+fi
