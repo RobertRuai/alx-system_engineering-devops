@@ -3,7 +3,7 @@
 #nginx must be running as nginx user
 #nginx must be listening on all active IPs on port 8080
 
-
+pkill -9 apache2
 sed -i s/80/8080/g /etc/nginx/sites-available/default
 chmod -R 666 /etc/nginx/nginx.conf
 sudo -u nginx service nginx restart
