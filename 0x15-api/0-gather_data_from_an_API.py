@@ -5,7 +5,7 @@ import sys
 
 
 if __name__ == '__main__':
-    userid = int(sys.argv[1])
+    userid = sys.argv[1]
     u_url = ("https://jsonplaceholder.typicode.com/users/{}".format(
         userid))
     res = requests.get(u_url)
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         if task.get('completed') is True:
             done_lst.append(task.get('title'))
             done_tasks += 1
-    print("Employyee {} is done with tasks({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         name, done_tasks, t_tasks))
     for title in done_lst:
         print("\t {}".format(title))
