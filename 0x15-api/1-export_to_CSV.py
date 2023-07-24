@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Use JSONPlaceholder API to get information about employee"""
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == '__main__':
