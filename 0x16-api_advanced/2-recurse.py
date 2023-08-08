@@ -4,7 +4,7 @@ import requests
 
 
 def top_ten(subreddit):
-    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     headers = {
         "User-Agent": "Mozilla/5.0"
     }
@@ -16,4 +16,4 @@ def top_ten(subreddit):
         for post in posts[:10]:
             title = post["data"]["title"]
             print(title)
-    print("None")
+    print(None)
