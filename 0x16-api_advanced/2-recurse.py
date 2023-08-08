@@ -19,7 +19,7 @@ def recurse(subreddit, hot_list=[], after=None):
         posts = res_jsn["data"]["children"]
         if not posts:
             return hot_list
-        for post in posts[:10]:
+        for post in posts:
             title = post["data"]["title"]
             host_list.append(title)
         l_post = posts[-1]["data"]["name"]
