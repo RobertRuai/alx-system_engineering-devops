@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-prints ttitles o 1st 10 hot posts listed 
+prints ttitles o 1st 10 hot posts listed
 for given subreddit recursively
 """
 import requests
