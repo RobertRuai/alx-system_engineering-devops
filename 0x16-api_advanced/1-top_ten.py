@@ -16,4 +16,5 @@ def top_ten(subreddit):
         for post in posts[:10]:
             title = post["data"]["title"]
             print(title)
-    print("None")
+    else:
+        print("None")
