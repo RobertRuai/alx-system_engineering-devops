@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-""" prints ttitles o 1st 10 hot posts listed for a given subreddit"""
+"""prints ttitles o 1st 10 hot posts listed for a given subreddit"""
 import requests
 
 
 def top_ten(subreddit):
+    """prints ttitles o 1st 10 hot posts listed for a given subreddit"""
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     headers = {
-        "User-Agent": "YOUR_USER_AGENT"
+        "User-Agent": "Mozilla/5.0"
     }
 
     res = requests.get(url, headers=headers)
@@ -16,5 +17,4 @@ def top_ten(subreddit):
         for post in posts[:10]:
             title = post["data"]["title"]
             print(title)
-    else:
-        print(None)
+    print(None)
