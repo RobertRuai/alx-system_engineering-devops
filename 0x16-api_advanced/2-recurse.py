@@ -25,4 +25,4 @@ def recurse(subreddit, hot_list=[], after=None):
         l_post = posts[-1]["data"]["name"]
         return recurse(subreddit, hot_list=hot_list, after=after)
     else:
-        return None
+        return "None"
