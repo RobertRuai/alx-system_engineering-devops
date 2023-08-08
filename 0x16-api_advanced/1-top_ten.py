@@ -4,8 +4,7 @@ import requests
 
 
 def top_ten(subreddit):
-    """prints ttitles o 1st 10 hot posts listed for a given subreddit"""
-    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     headers = {
         "User-Agent": "Mozilla/5.0"
     }
